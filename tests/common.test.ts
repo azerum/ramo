@@ -1,3 +1,5 @@
+import { describe, test, expect } from 'vitest';
+
 import {
   isComp,
   Var,
@@ -7,7 +9,7 @@ import {
   keysIn,
   iota,
   toArray,
-} from '../lib/common';
+} from '../lib/common.js';
 
 describe('Shared elements', () => {
   test('`isComp(x)` is truthy when x is a non-Var object', () => {

@@ -8,7 +8,7 @@ import {
   Subst,
   Term,
   CompoundTerm,
-} from './common';
+} from './common.js';
 
 // To reify a term, we first generate a substitution that associates
 // each fresh variable with a reified name (like "_0", "_1", etc.). We

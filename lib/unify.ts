@@ -1,4 +1,4 @@
-import { isComp, isVar, walk, keysIn } from './common';
+import { isComp, isVar, walk, keysIn } from './common.js';
 
 // Unification is at the heart of miniKanren, ramo, and logic
 // programming in general. Here we use Friedman and Byrd's quite elegant

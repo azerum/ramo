@@ -1,7 +1,7 @@
-import * as $ from '../lib/streams';
-import { unify } from '../lib/unify';
-import { Var } from '../lib/common';
-import { succeedo, failo, eq } from '../lib/goals';
+import * as $ from '../lib/streams.js';
+import { Var } from '../lib/common.js';
+import { succeedo, failo, eq } from '../lib/goals.js';
+import { describe, test, expect } from 'vitest';
 
 describe('Goals', () => {
   test('`succeedo` produces a unit stream of its argument', () => {

@@ -1,4 +1,5 @@
-import { empty, cons, unit, concat, chain, take } from '../lib/streams';
+import { describe, test, expect } from 'vitest';
+import { empty, cons, unit, concat, chain, take } from '../lib/streams.js';
 
 describe('Streams', () => {
   test('`concat(x, empty)` = x', () => {

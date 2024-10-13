@@ -1,7 +1,7 @@
-import * as $ from './streams';
-import { unify } from './unify';
-import { unsweeten } from './sugar';
-import { toArray, iota, Var, Subst, Term } from './common';
+import * as $ from './streams.js';
+import { unify } from './unify.js';
+import { unsweeten } from './sugar.js';
+import { toArray, iota, Var, Subst, Term } from './common.js';
 
 // A "goal" is a function that takes a substitution and produces a
 // stream of substitutions.

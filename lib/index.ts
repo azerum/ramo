@@ -1,6 +1,6 @@
-import { run, Rel } from './ramo';
-import { succeedo, failo, eq, conde, exist } from './goals';
-import { cons, first, rest } from './sugar';
+import { run, Rel } from './ramo.js';
+import { succeedo, failo, eq, conde, exist } from './goals.js';
+import { cons, first, rest } from './sugar.js';
 
 // We provide these relations on pairs in order to reduce the
 // dependency on the (somewhat) awkward pair operators (cons, first,

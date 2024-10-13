@@ -1,5 +1,6 @@
-import { Var } from '../lib/common';
-import { reify } from '../lib/reify';
+import { describe, test, expect } from 'vitest';
+import { Var } from '../lib/common.js';
+import { reify } from '../lib/reify.js';
 
 describe('Reification', () => {
   test('`reify` acts like the identity for non-Var terms', () => {

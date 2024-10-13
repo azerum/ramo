@@ -1,3 +1,5 @@
+import { describe, test, expect } from 'vitest';
+
 import {
   run,
   Rel,
@@ -11,7 +13,7 @@ import {
   conso,
   firsto,
   resto,
-} from '../lib/index';
+} from '../lib/index.js';
 
 // I've taken many of these tests straight from the text of "The
 // Reasoned Schemer"; these I've named according to the chapter and

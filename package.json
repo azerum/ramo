@@ -1,16 +1,18 @@
 {
+  "type": "module",
   "name": "ramo",
   "version": "0.1.2",
   "description": "miniKanren for JavaScript",
-  "main": "dist/bundle.cjs.js",
-  "unpkg": "dist/bundle.umd.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc",
-    "test": "jest"
+    "build": "tsc -p ./tsconfig.build.json",
+    "type-check": "tsc",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -30,17 +32,12 @@
   },
   "homepage": "https://github.com/wjlewis/ramo#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.5",
     "husky": "^4.2.5",
-    "jest": "^26.1.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.1.3",
-    "typescript": "^3.9.7"
-  },
-  "jest": {
-    "preset": "ts-jest"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
   },
   "husky": {
     "hooks": {

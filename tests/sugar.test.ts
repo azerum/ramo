@@ -1,5 +1,6 @@
-import { Var, CompoundTerm } from '../lib/common';
-import { unsweeten, sweeten, WILD, cons, NIL } from '../lib/sugar';
+import { describe, test, expect } from 'vitest';
+import { Var, CompoundTerm } from '../lib/common.js';
+import { unsweeten, sweeten, WILD, cons, NIL } from '../lib/sugar.js';
 
 describe('Desugaring/resugaring', () => {
   test('`unsweeten` acts like the identity for non-Arrays', () => {

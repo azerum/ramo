@@ -1,5 +1,6 @@
-import { Var } from '../lib/common';
-import { unify } from '../lib/unify';
+import { describe, test, expect } from 'vitest';
+import { Var } from '../lib/common.js';
+import { unify } from '../lib/unify.js';
 
 describe('Unification', () => {
   test('`unify` succeeds with equal non-Var terms', () => {

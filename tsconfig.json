@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "alwaysStrict": true,
-    "outDir": "dist",
-    "declaration": true
+    "noEmit": true,
+
+    "module": "Node16",
+    "target": "ES2020",
+    "moduleResolution": "Node16"
   },
-  "include": ["lib/**/*.ts"]
+
+  "include": ["lib/**/*.ts", "tests/**/*.ts"]
 }
