@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
+    "prepare": "npm run build",
     "build": "tsc -p ./tsconfig.build.json",
     "type-check": "tsc",
     "test": "vitest"
